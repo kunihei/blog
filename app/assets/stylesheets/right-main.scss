@@ -1,45 +1,56 @@
 .right-main{
   height: 100vh;
   width: calc(100vw - 50vw);
-  background-color: red;
   float: right;
-  position: absolute;
   right: 0;
-  position: fixed;
-  overflow: scroll;
-  
-  .right-messages{
-    overflow: scroll;
-    &__post{
-      overflow: scroll;
-      padding-top: 20px;
-      text-align: center;
-      font-size: 28px;
-      height: 50px;
-      border-bottom: 1px solid black;
+  background-image: url(image1.jpg);
+
+  .right-icon{
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    &__total__btn{
+      font-size: 1.3em;
+      text-decoration: none;
+      color: papayawhip;
+    }
+    &__total__btn:hover{
+      color: red;
     }
   }
+  
+  
+  .right-messages__post{
+    line-height: 100px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    height: 100px;
+    border-bottom: px solid black;
+  }
+  
+
   .right-message{
+    background-color: lightgoldenrodyellow;
+    height: 500px;
     overflow: scroll;
-    &__total{
-      overflow: scroll;
-      margin: 0 15px 0 25px;
+    &__info__total{
+      font-size: 17px;
+      cursor: pointer;
+      transition:　1.0s;
+      color: black;
+      font-weight: bold;
       display: flex;
-      padding: 0 10px;
-      width: fit-content;
-      margin: 10px auto;
+      padding: 0 10px 10px 10px;
+      margin: 10px 0 10px 0;
       justify-content: center;
-      border: 5px solid black;
-      border-radius: 50px;
-      &__date{
-        overflow: scroll;
-        font-size: 15px;
-      }
+      border-bottom: 1px solid black;
       &__list{
-        overflow: scroll;
-        font-size: 15px;
         padding: 0 30px;
       }
+    }
+    &__info__total:hover{
+      color: red;
     }
   }
 }
