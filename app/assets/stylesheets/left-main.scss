@@ -1,0 +1,54 @@
+.main{
+  height: 100vh;
+  width: 100vw;
+}
+
+table{
+  margin: 0 auto;
+}
+
+td:first-child{
+  color: red;
+}
+
+td{
+  width: 70px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 25px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.left-main{
+  height: 100vh;
+  width: calc(100vw - 50%);
+  background-color: yellowgreen;
+  position: relative;
+  &__month{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0 20px 0;
+  }
+  &__image{
+    height: 300px;
+    width: calc(100vw - 60vw);
+    background-color: blue;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  &__date{
+    position: absolute;
+    left: 15px;
+    margin: 0 auto;
+    
+    text-align: center;
+  
+    &__week{
+      margin-top: 20px;
+    }
+    &__days{
+      margin-top: 5px;
+    }
+  }
+}
