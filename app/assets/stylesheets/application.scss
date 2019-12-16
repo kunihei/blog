@@ -3,3 +3,43 @@
 @import "font-awesome";
 @import "left-main";
 @import "right-main";
+@import "sing_up";
+
+html{
+  height: 100vh;
+  width: 100vw;
+}
+.header{
+  height: 80px;
+  width: 100vw;
+  background-color: lightgrey;
+  &__title{
+    padding-top: 10px;
+    &__text{
+      color: black;
+      text-decoration: none;
+      font-size: 40px;
+      padding-left: 20px;
+    }
+  }
+  &__left__btn{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: black;
+    text-decoration: none;
+  }
+  &__left__btn:hover{
+    color: red;
+  }
+  &__right__btn{
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    color: black;
+    text-decoration: none;
+  }
+  &__right__btn:hover{
+    color: red;
+  }
+}
