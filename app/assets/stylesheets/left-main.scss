@@ -1,5 +1,5 @@
 .main{
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 100vw;
 }
 
@@ -22,7 +22,7 @@ td{
 }
 
 .left-main{
-  height: 100vh;
+  height: calc(100vh - 80px);
   background-image: url(images.jpeg);
   width: calc(100vw - 50%);
   position: fixed;

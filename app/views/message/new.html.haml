@@ -1,0 +1,8 @@
+.content__title
+  新規記事の作成
+.main__post
+  = form_with model: @messages, class: :form, local: true do |form|
+    = form.text_field :title, placeholder: :タイトル, class: ":form__title"
+    = form.text_field :image, placeholder: "Image Url", class: "form__image"
+    = form.text_area :text, placeholder: :ブログ本文, class: ":form__text"
+    = form.submit '投稿する', class: ":form__btn"

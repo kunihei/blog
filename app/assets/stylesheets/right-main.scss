@@ -1,5 +1,5 @@
 .right-main{
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: calc(100vw - 50vw);
   float: right;
   right: 0;
@@ -7,8 +7,8 @@
 
   .right-icon{
     position: absolute;
-    top: 37px;
-    right: 10px;
+    top: 30px;
+    right: 20px;
     &__total__btn{
       font-size: 1.3em;
       text-decoration: none;

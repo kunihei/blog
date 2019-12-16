@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>毎日日記</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__title">
+        <%= link_to "毎日日記", root_path, class: "header__title__text" %>
+      </div>
+      <div class="header__right">
+        <% if user_signed_in? %>
+          
+        <% else %>
+          <%= link_to "ログイン", new_user_session_path, class: "header__left__btn" %>
+          <%= link_to "新規登録", new_user_registration_path, class: "header__right__btn" %>
+        <% end %>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
