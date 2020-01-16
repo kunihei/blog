@@ -1,0 +1,25 @@
+.right-main
+  .right-icon
+    .right-icon__total
+    -if user_signed_in?
+      = link_to '#', class: "right-icon__total__btn" do
+        = icon('fas', 'users-cog')
+      = link_to destroy_user_session_path, method: :delete, class: "right-icon__total__btn" do
+        = icon('fas', 'door-closed')
+      = link_to new_message_path, class: "right-icon__total__btn" do
+        = icon('fas', 'pencil-alt')
+    -else
+    
+  .right-messages
+    .right-messages__post
+      投稿一覧
+  .right-message
+    -@messages.each do |message|
+      .right-message__info
+        .right-message__info__total
+          .right-message__info__total__date
+            = message.created_at.strftime("%Y/%m/%d %H:%M")
+          .right-message__info__total__list
+            = message.name
+          .right-message__info__total__name
+            = message.name
