@@ -8,6 +8,7 @@
         = icon('fas', 'door-closed')
       = link_to new_message_path, class: "right-icon__total__btn" do
         = icon('fas', 'pencil-alt')
+      =current_user.nickname
     -else
     
   .right-messages
@@ -22,4 +23,4 @@
           .right-message__info__total__list
             = message.name
           .right-message__info__total__name
-            = message.name
+            = message.user.nickname

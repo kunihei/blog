@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    @messages = Message.all
+    @messages = Message.includes(:user)
   end
 
   def new
@@ -14,6 +14,6 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    params.require(:message).permit(:name, :text, :image)
+    params.require(:message).permit(:name, :text, :image).merge(user_id: current_user.id)
   end
 end

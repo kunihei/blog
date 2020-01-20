@@ -1,5 +1,5 @@
 .main{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   width: 100vw;
 }
 
@@ -13,7 +13,7 @@ td:first-child{
 
 td{
   width: 70px;
-  line-height: 20px;
+  line-height: 15px;
   text-align: center;
   font-size: 25px;
   padding: 12px;
@@ -33,7 +33,7 @@ td{
     padding: 20px 0 20px 0;
   }
   &__image{
-    height: 300px;
+    height: 270px;
     width: calc(100vw - 60vw);
     background-image: url(image5.jpeg);
     margin: 0 auto;
