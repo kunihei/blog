@@ -1,0 +1,38 @@
+.main-login{
+  height: calc(100vh - 80px);
+  width: 100vw;
+  background-image: url(image7.jpg);
+  background-size: cover;
+  display: flex;
+}
+.login_log{
+  padding: 230px 0 0 20px;
+  font-size: 60px;
+}
+.log-in{
+  padding-left: 420px;
+  margin-top: 160px;
+  &_text_box{
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+  }
+  &_btn{
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+  }
+  &_email{
+    margin: 10px 0 10px 0;
+  }
+  &_password{
+    margin: 10px 0 10px 0;
+  }
+  &_remember{
+    margin-bottom: 10px;
+  }
+}
