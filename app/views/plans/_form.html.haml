@@ -1,0 +1,16 @@
+= form_for @plan do |f|
+  - if @plan.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@plan.errors.count, "error")} prohibited this plan from being saved:"
+      %ul
+        - @plan.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label "予定"
+    = f.text_field :title
+  .field
+    = f.label "開始時間"
+    = f.datetime_select :start_time
+  .actions
+    = f.submit '登録'

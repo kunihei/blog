@@ -67,3 +67,4 @@ gem 'devise'
 gem 'pry-rails'
 gem 'mini_magick'
 gem 'erb2haml'
+gem "simple_calendar", "~> 2.0"
