@@ -1,0 +1,160 @@
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+th {
+  background-color: white;
+  padding: 6px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+table{
+  margin: 0 auto;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.main-image{
+  height: calc(100vh - 80px);
+  width: 100vw;
+  position: relative;
+  opacity: 0.8;
+}
+.main-page{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+label {
+  display: block;
+}
+
+.wday-6{
+  color: blue;
+}
+
+.wday-0{
+  color: red;
+}
+
+.day{
+  vertical-align: top;
+  font-size: 15px;
+  height: 60px;
+  overflow: scroll;
+}
+
+.prev-month{
+  background: #dddddd;
+}
+
+.today{
+  background: #ffffc0;
+}
+
+.simple-calendar{
+  height: 50px !important;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.calendar-heading{
+  box-sizing: border-box;
+  margin: 10px 0 5px 0;
+  text-align: center;
+  font-size: 20px;
+  &_btn{
+    text-decoration: none;
+    color: #333;
+    &:hover{
+      color: red;
+    }
+  }
+}
+
+.main-logo{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  &_info{
+    font-size: 25px;
+  }
+  &_btn{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: red;
+    }
+  }
+  &_schedule{
+    width: 60px;
+    height: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+    overflow: scroll;
+    &_name{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}

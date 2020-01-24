@@ -1,0 +1,28 @@
+.main-logo
+  日記一覧
+  %table
+    %thead
+      %tr
+        %th
+          .main-logo_info
+            タイトル
+        %th
+          .main-logo_info
+            ユーザー名
+        %th
+          .main-logo_info
+            日時
+    %tbody
+      -@plans.each do |plan| 
+        -if plan.user_id == current_user.id
+          %tr
+            %td 
+              = link_to plan.title, plan_path(plan.id), class: 'main-logo_btn'
+            %td
+              =plan.user.nickname
+            %td
+              = plan.start_time.strftime("%Y年%m月%d日")
+            -# %td
+            -#   = link_to '編集', edit_plan_path(plan.id), class: 'main-logo_btn'
+            -# %td
+            -#   = link_to '削除',plan_path(plan.id), method: :delete, class: 'main-logo_btn', data: { confirm: '本当に消して大丈夫ですか?' }

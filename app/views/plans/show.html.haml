@@ -1,0 +1,11 @@
+%h1 タイトル
+= @plan.title
+
+%h1 時間
+= @plan.start_time.strftime("%Y-%m-%d %H:%M")
+
+%h1 内容
+= @plan.content
+
+= link_to 'Edit', edit_plan_path(@plan) |
+= link_to 'Back', plans_path
