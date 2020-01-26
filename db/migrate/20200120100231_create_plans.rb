@@ -3,7 +3,7 @@ class CreatePlans < ActiveRecord::Migration[5.2]
     create_table :plans do |t|
       t.string :title
       t.text :content
-      t.text :image
+      t.string :image
       t.datetime :start_time
 
       t.timestamps
