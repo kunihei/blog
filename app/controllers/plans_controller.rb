@@ -46,7 +46,7 @@ class PlansController < ApplicationController
   # DELETE /plans/1.json
   def destroy
     @plan.destroy
-    redirect_to plans_path, notice:"削除しました"
+    redirect_to  list_index_plans_path, notice:"削除しました"
   end
 
   private

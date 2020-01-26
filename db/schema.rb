@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_01_21_110001) do
   create_table "plans", force: :cascade do |t|
     t.string "title"
     t.text "content"
-    t.text "image"
+    t.string "image"
     t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

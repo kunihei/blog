@@ -5,6 +5,7 @@ body {
 th {
   background-color: white;
   padding: 6px;
+  width: 150px;
   border-bottom: 2px solid #dddddd;
   border-collapse: collapse;
   border-left: 1px solid #dddddd;
@@ -144,7 +145,7 @@ label {
     }
   }
   &_schedule{
-    width: 60px;
+    width: 50px;
     height: 50px;
     flex-wrap: wrap;
     margin: auto;
