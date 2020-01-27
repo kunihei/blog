@@ -2,21 +2,6 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
 }
 
-th {
-  background-color: white;
-  padding: 6px;
-  width: 150px;
-  border-bottom: 2px solid #dddddd;
-  border-collapse: collapse;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  box-sizing: border-box;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 5px;
-}
-
 td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-weight: bold;
@@ -33,6 +18,21 @@ td {
 
 table{
   margin: 0 auto;
+  background: none;
+}
+
+th {
+  padding: 6px;
+  width: 150px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #notice {
@@ -81,6 +81,15 @@ table{
   bottom: 0;
   right: 0;
   margin: auto;
+  th{
+    background-color: #ffffff;
+  }
+  .day{
+    vertical-align: top;
+    font-size: 15px;
+    height: 60px;
+    overflow: scroll;
+  }
 }
 
 label {
@@ -93,13 +102,6 @@ label {
 
 .wday-0{
   color: red;
-}
-
-.day{
-  vertical-align: top;
-  font-size: 15px;
-  height: 60px;
-  overflow: scroll;
 }
 
 .prev-month{

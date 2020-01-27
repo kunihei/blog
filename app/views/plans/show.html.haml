@@ -1,11 +1,11 @@
 %h1 タイトル
 = @plan.title
 
-%h1 時間
-= @plan.start_time.strftime("%Y-%m-%d %H:%M")
+%h1 日時
+= @plan.start_time.strftime("%Y年%m月%d日 %H:%M")
 
 %h1 内容
-= @plan.content
+=simple_format(@plan.content)
 
 %h1 画像
 = image_tag @plan.image.to_s
