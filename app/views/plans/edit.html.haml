@@ -1,21 +1,38 @@
--# %h1 Editing plan
+= image_tag 'image9.jpg', class: 'main-image2'
 
--# = render 'form'
+.post-main
+  %h1 投稿編集
+  = form_for @plan do |f|
+    %table
+      %tr
+        %th
+          = f.label 'タイトル'
+        %th
+          = f.text_field :title, class: 'post-main_title'
 
--# = link_to 'Show', @plan
--# \|
--# = link_to 'Back', plans_path
+      %tr
+        %th
+          = f.label '画像'
+        %th 
+          #img_field{:onclick => "$('#file').click()"}
+            - if @plan.image.present?
+              = image_tag @plan.image.url, size: '200x150'
+            - else
+              %i.fas.fa-image
+              %i.fas.fa-file-upload.add
+          // id "file"をつけ、「display:none;」で隠す
+          =f.file_field :image, class: "image", style: "display:none;", id: "file"
 
+      %tr
+        %th
+          = f.label '内容'
+        %th
+          = f.text_area :content, class: 'post-main_content'
 
-= form_with(model: @plan, local: true) do |form|
+      %tr
+        %th
+          = f.label '日時'
+        %th
+          = f.datetime_select :start_time, class: 'post-main_time'
 
-  = form.label :title 
-  = form.text_field :title
-
-  = form.label :start_time
-  = form.datetime_select :start_time
-
-  = form.label :content
-  = form.text_field :content
-
-  = form.submit
+    = f.submit '更新', class: 'post-main_btn'

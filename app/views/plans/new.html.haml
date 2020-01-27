@@ -1,22 +1,36 @@
--# %h1 New plan
+= image_tag 'image3.jpg', class: 'main-image2'
+.post-main
+  %h1 新規投稿
+  = form_for @plan do |f|
+    %table
+      %tr
+        %th
+          = f.label 'タイトル'
+        %th
+          = f.text_field :title, class: 'post-main_title'
 
--# = render 'form'
+      %tr
+        %th
+          = f.label '画像'
+        %th 
+          #img_field{:onclick => "$('#file').click()"}
+            - if @plan.image.present?
+              = image_tag @plan.image
+            - else
+              %i.fas.fa-image
+              %i.fas.fa-file-upload.add
+          // id "file"をつけ、「display:none;」で隠す
+          =f.file_field :image, class: "image", style: "display:none;", id: "file"
 
--# = link_to '戻る', plans_path
+      %tr
+        %th
+          = f.label '内容'
+        %th
+          = f.text_area :content, class: 'post-main_content'
 
-
-= form_with(model: @plan, local: true) do |form|
-
-  = form.label :title 
-  = form.text_field :title
-
-  = form.label :image 
-  = form.file_field :image
-
-  = form.label :start_time
-  = form.datetime_select :start_time
-
-  = form.label :content
-  = form.text_field :content
-
-  = form.submit
+      %tr
+        %th
+          = f.label '日時'
+        %th
+          != sprintf(f.date_select(:start_time, prefix:'birthday',with_css_classes:'XXXXX', prompt:"--",use_month_numbers:true, start_year:Time.now.year, end_year:1900, date_separator:'%s'),'年','月')+'日'
+    = f.submit '登録', class: 'post-main_btn'
