@@ -6,7 +6,6 @@ td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  background-color: white;
   color: black;
   height: 40px;
   width: 160px;
@@ -84,6 +83,16 @@ th {
   th{
     background-color: #ffffff;
   }
+  td{
+    background-color: white;
+  }
+  .prev-month{
+    background: #dddddd;
+  }
+  .today{
+    background: #ffffc0;
+  }
+  
   .day{
     vertical-align: top;
     font-size: 15px;
@@ -104,14 +113,6 @@ label {
   color: red;
 }
 
-.prev-month{
-  background: #dddddd;
-}
-
-.today{
-  background: #ffffc0;
-}
-
 .simple-calendar{
   height: 50px !important;
   width: 800px;
@@ -122,7 +123,8 @@ label {
   box-sizing: border-box;
   margin: 10px 0 5px 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   &_btn{
     text-decoration: none;
     color: #333;
