@@ -1,15 +1,38 @@
-%h1 タイトル
-= @plan.title
+= image_tag 'image10.jpg', class: 'main-top'
 
-%h1 日時
-= @plan.start_time.strftime("%Y年%m月%d日 %H:%M")
+.main-info
+  .main-info_sel
+    .main-info_sel_content
+      内容詳細
+    = link_to '編集', edit_plan_path(@plan), class: "main-info_sel_btn"
+    = link_to '戻る', plans_path, class: "main-info_sel_btn"
+    = link_to '削除',plan_path(@plan), method: :delete, class: 'main-info_sel_btn', data: { confirm: '本当に消して大丈夫ですか?' }
 
-%h1 内容
-=simple_format(@plan.content)
+  %table
+    %tr
+      %th
+        .main-info_title
+          タイトル
+      %th
+        = @plan.title
 
-%h1 画像
-= image_tag @plan.image.to_s
+    %tr
+      %th
+        .main-info_title
+          日時
+      %th
+        = @plan.start_time.strftime("%Y年%m月%d日 %H:%M")
 
-= link_to '編集', edit_plan_path(@plan) |
-= link_to '戻る', plans_path
-= link_to '削除',plan_path(@plan), method: :delete, class: 'main-logo_btn', data: { confirm: '本当に消して大丈夫ですか?' }
+    %tr
+      %th
+        .main-info_title
+          画像
+      %th
+        = image_tag @plan.image.to_s, class: "main-info_image"
+
+    %tr
+      %th
+        .main-info_title
+          内容
+      %th
+        =simple_format(@plan.content)
