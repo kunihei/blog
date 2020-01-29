@@ -6,13 +6,19 @@
     %table
       %tr
         %th
-          = f.label 'タイトル'
+          = f.label 'タイトル', class: 'post-main_logo'
         %th
           = f.text_field :title, class: 'post-main_title'
+          
+      %tr
+        %th
+          = f.label '日時', class: 'post-main_logo'
+        %th
+          = f.datetime_select :start_time, class: 'post-main_time'
 
       %tr
         %th
-          = f.label '画像'
+          = f.label '画像', class: 'post-main_logo'
         %th 
           #img_field{:onclick => "$('#file').click()"}
             - if @plan.image.present?
@@ -25,14 +31,8 @@
 
       %tr
         %th
-          = f.label '内容'
+          = f.label '内容', class: 'post-main_logo'
         %th
           = f.text_area :content, class: 'post-main_content'
-
-      %tr
-        %th
-          = f.label '日時'
-        %th
-          = f.datetime_select :start_time, class: 'post-main_time'
 
     = f.submit '更新', class: 'post-main_btn'

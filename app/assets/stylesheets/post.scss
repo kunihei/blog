@@ -6,11 +6,15 @@
 }
 .post-main{
   position: absolute;
-  top: 13%;
+  top: 12%;
   left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
+
+  &_logo{
+    font-size: 25px;
+  }
   h1{
     font-size: 30px;
     font-weight: bold;
@@ -26,8 +30,8 @@
   }
 
   &_title{
-    height: 30px;
-    width: 380px;
+    height: 40px;
+    width: 500px;
   }
   &_image{
     width: 200px;
@@ -35,13 +39,18 @@
   }
 
   &_btn{
-    display: inline-block;
     font-size: 20px;
     margin-top: 5px;
-    height: 1000px;
-    width: 200px;
+    height: 50px;
+    width: 300px;
     cursor: pointer;
     font-weight: bold;
+    background-color: rgb(252, 252, 252);
+  }
+
+  select{
+    width: 80px;
+    height: 35px;
   }
  
   #img_field {
@@ -89,7 +98,7 @@
     color: #fff;
   }
   &_content{
-    height: 200px;
-    width: 380px;
+    height: 300px;
+    width: 500px;
   }
 }
