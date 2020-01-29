@@ -1,0 +1,48 @@
+.main-page{
+  background: image-url('image8.jpeg');
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  &_schedule{
+    width: 60px;
+    height: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+    overflow: scroll;
+    &_name{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+  th{
+    background-color: #ffffff;
+    height: 60px;
+    font-size: 30px;
+  }
+  td{
+    background-color: white;
+  }
+  .prev-month{
+    background: #dddddd;
+  }
+  .today{
+    background: #ffffc0;
+  }
+  
+  .day{
+    vertical-align: top;
+    font-size: 20px;
+    height: 100px;
+    overflow: scroll;
+  }
+  .wday-6{
+    color: blue;
+  }
+  
+  .wday-0{
+    color: red;
+  }  
+}

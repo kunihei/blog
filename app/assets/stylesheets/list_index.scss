@@ -10,4 +10,16 @@
   bottom: 0;
   right: 0;
   text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  &_info{
+    font-size: 25px;
+  }
+  &_btn{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color: red;
+    }
+  }
 }

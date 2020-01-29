@@ -33,6 +33,16 @@
     width: 200px;
     height: 100px;
   }
+
+  &_btn{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+    height: 1000px;
+    width: 200px;
+    cursor: pointer;
+    font-weight: bold;
+  }
  
   #img_field {
     font-size: 10px;
@@ -51,7 +61,7 @@
     box-sizing: border-box;
     transition: 0.3s ease-out;
   }
-   
+
   #img_field i {
     font-size: 50px;
     color: #aaa;
@@ -81,12 +91,5 @@
   &_content{
     height: 200px;
     width: 380px;
-  }
-  &_btn{
-    margin-top: 5px;
-    height: 35px;
-    width: 200px;
-    cursor: pointer;
-    font-weight: bold;
   }
 }

@@ -16,8 +16,7 @@ td {
 }
 
 table{
-  margin: 0 auto;
-  background: none;
+  margin: auto;
 }
 
 th {
@@ -34,9 +33,7 @@ th {
   border-radius: 5px;
 }
 
-#notice {
-  color: green;
-}
+
 
 .field_with_errors {
   padding: 2px;
@@ -50,72 +47,12 @@ th {
   padding: 7px 7px 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
-
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px -7px 0;
-    background-color: #c00;
-    color: #fff;
-  }
-
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
-}
-
-.main-image{
-  height: calc(100vh - 80px);
-  width: 100vw;
-  position: relative;
-  opacity: 0.8;
-}
-.main-page{
-  background: image-url('image8.jpeg');
-  background-size: cover;
-  width: 100vw;
-  height: calc(100vh - 80px);
-  th{
-    background-color: #ffffff;
-  }
-  td{
-    background-color: white;
-  }
-  .prev-month{
-    background: #dddddd;
-  }
-  .today{
-    background: #ffffc0;
-  }
-  
-  .day{
-    vertical-align: top;
-    font-size: 15px;
-    height: 60px;
-    overflow: scroll;
-  }
-}
-
-label {
-  display: block;
-}
-
-.wday-6{
-  color: blue;
-}
-
-.wday-0{
-  color: red;
 }
 
 .simple-calendar{
   height: 50px !important;
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
 .calendar-heading{
   box-sizing: border-box;
@@ -129,36 +66,6 @@ label {
     color: #333;
     &:hover{
       color: red;
-    }
-  }
-}
-
-.main-logo{
-  text-align: center;
-  font-size: 30px;
-  padding-bottom: 20px;
-  &_info{
-    font-size: 25px;
-  }
-  &_btn{
-    text-decoration: none;
-    color: black;
-    &:hover{
-      color: red;
-    }
-  }
-  &_schedule{
-    width: 50px;
-    height: 50px;
-    flex-wrap: wrap;
-    margin: auto;
-    overflow: scroll;
-    &_name{
-      text-decoration: none;
-      color: black;
-      &:hover{
-        color: red;
-      }
     }
   }
 }
