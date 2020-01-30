@@ -1,30 +1,31 @@
 .main-sign
-  %h2 ユーザー登録
-  .sign-in
+  .main-sign_logo
+    ユーザー登録
+  .main-sign_up
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
       .field
-        .sign-in_nickname
+        .main-sign_up_nickname
           = f.label "ニックネーム"
           %br/
-          = f.text_field :nickname, autofocus: true, class: 'sign-in_box', placeholder:'名前を入力してくだい'
+          = f.text_field :nickname, autofocus: true, class: 'main-sign_up_box', placeholder:'名前を入力してくだい'
         .field
-          .sign-in_email
+          .main-sign_up_email
             = f.label :email
             %br/
-            = f.email_field :email, autofocus: true, autocomplete: "email", class: 'sign-in_box', placeholder:'アドレスを入力してください'
+            = f.email_field :email, autofocus: true, autocomplete: "email", class: 'main-sign_up_box', placeholder:'アドレスを入力してください'
         .field
-          .sign-in_password
+          .main-sign_up_password
             = f.label :password
             - if @minimum_password_length
               %em
                 (#{@minimum_password_length} 文字以上)
             %br/
-            = f.password_field :password, autocomplete: "new-password", class: 'sign-in_box', placeholder:'パスワードを入力してくだい'
+            = f.password_field :password, autocomplete: "new-password", class: 'main-sign_up_box', placeholder:'パスワードを入力してくだい'
         .field
-          .sign-in_password2
+          .main-sign_up_password2
             = f.label "Password(確認)"
             %br/
-            = f.password_field :password_confirmation, autocomplete: "new-password", class: 'sign-in_box', placeholder:'もう一度入力してください'
+            = f.password_field :password_confirmation, autocomplete: "new-password", class: 'main-sign_up_box', placeholder:'もう一度入力してください'
         .actions
           = f.submit "登録",class: 'btn'

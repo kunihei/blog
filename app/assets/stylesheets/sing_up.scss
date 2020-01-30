@@ -1,36 +1,36 @@
-h2{
-  padding: 200px 0 0 20px;
-  font-size: 60px;
-}
 .main-sign{
   height: calc(100vh - 80px);
   width: 100vw;
   background-image: url(image4.jpeg);
   background-size: cover;
   display: flex;
-}
-.sign-in{
-  padding-left: 450px;
-  margin-top: 110px;
+  &_logo{
+    padding: 200px 0 0 60px;
+    font-size: 60px;
+  }
+  &_up{
+    padding-left: 430px;
+    margin-top: 110px;
 
-  &_email{
-    margin: 10px 0 10px 0;
-  }
-  &_password{
-    margin: 10px 0 10px;
-  }
-  &_box{
-    height: 40px;
-    width: 500px;
-    font-size: 20px;
-  }
-  .btn{
-    height: 40px;
-    width: 200px;
-    background-color: blue;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-    font-weight: bold;
+    &_email{
+      margin: 10px 0 10px 0;
+    }
+    &_password{
+      margin: 10px 0 10px;
+    }
+    &_box{
+      height: 40px;
+      width: 500px;
+      font-size: 20px;
+    }
+    .btn{
+      height: 40px;
+      width: 200px;
+      background-color: blue;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
   }
 }
