@@ -4,8 +4,7 @@ Rails.application.routes.draw do
       get 'list_index'
     end
   end
-
-  devise_for :users
+  devise_for :users,
+   controllers: { registrations: 'users/registrations' }
   root to: "plans#index"
-  resources :messages, only: [:index, :new, :create]
 end

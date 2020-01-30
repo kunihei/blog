@@ -1,9 +1,13 @@
 .main-remodeling
-  %h2
+  .main-remodeling_top
     ユーザー編集
   .main-remodeling_info
     = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
       = render "devise/shared/error_messages", resource: resource
+      .field
+        = f.label :nickname, class: 'main-remodeling_info_title'
+        %br/
+        = f.text_field :nickname, autofocus: true, class: 'main-remodeling_info_box', value: @user.nickname
       .field
         = f.label :email, class: 'main-remodeling_info_title'
         %br/

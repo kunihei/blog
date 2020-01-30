@@ -5,26 +5,28 @@
   background-size: cover;
   display: flex;
   opacity: 0.8;
-  h2{
-    padding-left: 50px;
+  &_top{
+    padding: 280px 0 0 70px;
+    font-size: 60px;
   }
   .field{
     margin: 13px 0 10px 0;
   }
   &_info{
     padding-left: 470px;
-    margin-top: 110px;
+    margin-top: 50px;
     &_box{
-      height: 40px;
-      width: 500px;
+      height: 35px;
+      width: 400px;
       font-size: 20px;
     }
     &_btn{
-      height: 40px;
+      height: 35px;
       width: 332px;
       background-color: blue;
       color: #ffffff;
       margin-bottom: 10px;
+      cursor: pointer;
     } 
     &_back{
       text-decoration: none;
