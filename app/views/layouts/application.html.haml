@@ -14,7 +14,7 @@
         = link_to "毎日日記", root_path, class: "header__title__text"
       .header__right
         - if user_signed_in?
-          = link_to '#', class: "header__right__icon" do
+          = link_to edit_user_registration_path, class: "header__right__icon" do
             = icon('fas', 'users-cog')
           = link_to destroy_user_session_path, method: :delete, class: "header__right__icon" do
             = icon('fas', 'door-closed')

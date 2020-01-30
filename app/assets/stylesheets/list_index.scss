@@ -5,21 +5,49 @@
 }
 .main-logo{
   position: absolute;
-  top: 13%;
+  top: 12%;
   left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
-  font-size: 30px;
-  padding-bottom: 20px;
   &_info{
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 150px;
   }
   &_btn{
     text-decoration: none;
     color: black;
     &:hover{
-      color: red;
+      color: white;
     }
+  }
+  &_post{
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  th{
+    width: 250px;
+    border-bottom: 2px solid #dddddd;
+    border-collapse: collapse;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+  }
+  td{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-weight: 50px;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    width: 160px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 25px;
   }
 }

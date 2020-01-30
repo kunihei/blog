@@ -12,6 +12,9 @@
   right: 0;
   text-align: center;
   overflow: scroll;
+  &_title{
+    font-size: 25px;
+  }
   &_sel{
     font-weight: bold;
     position: fixed;
@@ -34,12 +37,21 @@
     height: 300px;
   }
   th{
-    padding: 6px;
+    height: 45px;
+    font-size: 25px;
     width: 200px;
     border: 1px solid #111111;
     border-collapse: collapse;
     box-sizing: border-box;
     font-weight: bold;
     text-align: center;
+  }
+  &_message{
+    background-color: white;
+    height: 200px;
+    overflow: scroll;
+    padding-top: 40px;
+    box-sizing: border-box;
+
   }
 }

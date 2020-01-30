@@ -28,11 +28,15 @@
         .main-info_title
           画像
       %th
-        = image_tag @plan.image.to_s, class: "main-info_image"
+        -if  @plan.image.present?
+          = image_tag @plan.image.to_s, class: "main-info_image"
+        - else
+          = image_tag "image1.png", class: "main-info_image"
 
     %tr
       %th
         .main-info_title
           内容
       %th
-        =simple_format(@plan.content)
+        .main-info_message
+          =simple_format(@plan.content)

@@ -1,8 +1,6 @@
 @import "reset";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "left-main";
-@import "right-main";
 @import "sing_up";
 @import "log_in";
 @import "scaffolds";
@@ -10,6 +8,7 @@
 @import "list_index";
 @import "details";
 @import 'main-page';
+@import 'user_edit';
 
 .header{
   height: 80px;

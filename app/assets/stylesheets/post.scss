@@ -98,7 +98,11 @@
     color: #fff;
   }
   &_content{
-    height: 300px;
+    height: 250px;
     width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 350px;
+    min-height: 250px;
   }
 }

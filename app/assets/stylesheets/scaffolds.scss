@@ -2,38 +2,9 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
 }
 
-td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  height: 40px;
-  width: 160px;
-  text-align: center;
-  font-size: 16px;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-}
-
 table{
   margin: auto;
 }
-
-th {
-  padding: 6px;
-  width: 150px;
-  border-bottom: 2px solid #dddddd;
-  border-collapse: collapse;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  box-sizing: border-box;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 5px;
-}
-
-
 
 .field_with_errors {
   padding: 2px;
