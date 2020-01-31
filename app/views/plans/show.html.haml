@@ -14,14 +14,16 @@
         .main-info_title
           タイトル
       %th
-        = @plan.title
+        .main-info_logo
+          = @plan.title
 
     %tr
       %th
         .main-info_title
           日時
       %th
-        = @plan.start_time.strftime("%Y年%m月%d日 %H:%M")
+        .main-info_logo
+          = @plan.start_time.strftime("%Y年%m月%d日 %H:%M")
 
     %tr
       %th
