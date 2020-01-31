@@ -21,7 +21,7 @@
         %th 
           #img_field{:onclick => "$('#file').click()"}
             - if @plan.image.present?
-              = image_tag @plan.image
+              = image_tag @plan.image.to_s
             - else
               %i.fas.fa-image
               %i.fas.fa-file-upload.add
