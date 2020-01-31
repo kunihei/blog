@@ -20,11 +20,7 @@
           = f.label '画像', class: 'post-main_logo'
         %th 
           #img_field{:onclick => "$('#file').click()"}
-            - if @plan.image.present?
-              = image_tag @plan.image
-            - else
-              %i.fas.fa-image
-              %i.fas.fa-file-upload.add
+            = image_tag @plan.image.to_s
           // id "file"をつけ、「display:none;」で隠す
           =f.file_field :image, class: "image", style: "display:none;", id: "file"
 
