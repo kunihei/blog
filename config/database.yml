@@ -83,3 +83,4 @@ production:
   database: blog_production
   username: blog
   password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
+  master_key: <%= ENV['RAILS_MASTER_KEY'] %>
