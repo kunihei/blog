@@ -29,7 +29,7 @@
           画像
       %th
         -if  @plan.image.present?
-          = image_tag @plan.image.to_s, class: "main-info_image"
+          = image_tag @plan.image.url, class: "main-info_image"
         - else
           = image_tag "image1.png", class: "main-info_image"
 

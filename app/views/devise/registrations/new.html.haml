@@ -22,6 +22,9 @@
                 (#{@minimum_password_length} 文字以上)
             %br/
             = f.password_field :password, autocomplete: "new-password", class: 'main-sign_up_box', placeholder:'パスワードを入力してくだい'
+          .main-sign_up_password_box
+            %input#js-passcheck{type: "checkbox"}
+            %label{for: "js-passcheck"}パスワードを表示する
         .field
           .main-sign_up_password2
             = f.label "Password(確認)"
