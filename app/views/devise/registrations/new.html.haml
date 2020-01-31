@@ -21,14 +21,14 @@
               %em
                 (#{@minimum_password_length} 文字以上)
             %br/
-            = f.password_field :password, autocomplete: "new-password", class: 'main-sign_up_box', placeholder:'パスワードを入力してくだい'
+            = f.password_field :password, autocomplete: "new-password", id: "js-password", class: 'main-sign_up_pass', placeholder:'パスワードを入力してくだい'
           .main-sign_up_password_box
             %input#js-passcheck{type: "checkbox"}
-            %label{for: "js-passcheck"}パスワードを表示する
+            %label{for: "js-passcheck"}両方のパスワードを表示する
         .field
           .main-sign_up_password2
             = f.label "Password(確認)"
             %br/
-            = f.password_field :password_confirmation, autocomplete: "new-password", class: 'main-sign_up_box', placeholder:'もう一度入力してください'
+            = f.password_field :password_confirmation, autocomplete: "new-password", class: 'main-sign_up_pass', placeholder:'もう一度入力してください'
         .actions
           = f.submit "登録",class: 'btn'
