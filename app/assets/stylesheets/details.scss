@@ -12,8 +12,14 @@
   right: 0;
   text-align: center;
   overflow: scroll;
+  &_logo{
+    text-align: center;
+    font-weight: bold;
+  }
   &_title{
     font-size: 25px;
+    text-align: center;
+    font-weight: bold;
   }
   &_sel{
     font-weight: bold;
@@ -43,8 +49,6 @@
     border: 1px solid #111111;
     border-collapse: collapse;
     box-sizing: border-box;
-    font-weight: bold;
-    text-align: center;
   }
   &_message{
     background-color: white;
@@ -52,6 +56,6 @@
     overflow: scroll;
     padding-top: 40px;
     box-sizing: border-box;
-
+    text-align: center;
   }
 }
