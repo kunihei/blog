@@ -6,7 +6,8 @@
       .main-page_schedule
         -plans.each do |plan|
           -if plan.user_id == current_user.id
-            = link_to plan.title, plan, class: 'main-page_schedule_name'
+            %ol
+              %li= link_to plan.title, plan, class: 'main-page_schedule_name'
 - else
   .main-page
     = month_calendar events: @plans do |date, plans|

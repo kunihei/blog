@@ -4,14 +4,13 @@
   width: 100vw;
   height: calc(100vh - 80px);
   &_schedule{
-    width: 60px;
     height: 50px;
-    flex-wrap: wrap;
     margin: auto;
     overflow: scroll;
     &_name{
       text-decoration: none;
       color: black;
+      font-size: 15px;
       &:hover{
         color: red;
       }
