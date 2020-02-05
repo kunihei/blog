@@ -12,6 +12,9 @@
         .log-in_password
           = f.label :password
           %br/
-          = f.password_field :password, autocomplete: "current-password", placeholder:'パスワードを入力してくだい', class: 'log-in_text_box'
+          = f.password_field :password, autocomplete: "current-password", placeholder:'パスワードを入力してくだい', class: 'main-sign_up_pass'
+        .main-sign_up_password_box
+          %input#js-passcheck{type: "checkbox"}
+          %label{for: "js-passcheck"}両方のパスワードを表示する
       .actions
         = f.submit "ログイン", class: 'log-in_btn'
