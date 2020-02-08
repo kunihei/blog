@@ -1,14 +1,18 @@
 class PlansController < ApplicationController
   before_action :set_plan, only: [:show, :edit, :update, :destroy]
-  before_action :list_plan, only: [:index, :list_index]
+  before_action :list_plan, only: [:list_index]
   before_action :Guard_clause, only: [:show,]
 
   # GET /plans
   # GET /plans.json
   def index
+    @search = Plan.ransack(params[:q])
+    @plans = @search.result
   end
 
   def list_index
+    @search = Plan.ransack(params[:q])
+    @plans = @search.result
   end
 
   # GET /plans/1

@@ -1,53 +1,74 @@
-.main-image3{
+.main-logo{
   height: calc(100vh - 80px);
   width: 100vw;
-  position: relative;
-}
-.main-logo{
-  position: absolute;
-  top: 12%;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  background-image: url(image2.jpg);
+  background-size: cover;
   text-align: center;
-  &_info{
-    font-size: 35px;
-    font-weight: 150px;
-  }
-  &_btn{
-    text-decoration: none;
-    color: black;
-    &:hover{
-      color: white;
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-sizing: border-box;
   &_post{
     padding-bottom: 10px;
     font-size: 50px;
     font-weight: bold;
-  }
-  th{
-    width: 250px;
-    border-bottom: 2px solid #dddddd;
-    border-collapse: collapse;
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 5px;
-  }
-  td{
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-weight: 50px;
-    text-decoration: none;
-    color: black;
-    height: 40px;
-    width: 160px;
-    text-align: center;
-    font-size: 16px;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    font-size: 25px;
+    &_info{
+      font-size: 35px;
+      font-weight: 150px;
+    }
+    &_btn{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: white;
+      }
+    }
+    th{
+      width: 240px;
+      border-bottom: 2px solid #dddddd;
+      border-collapse: collapse;
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+      border-top: 1px solid #dddddd;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 5px;
+    }
+    td{
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-weight: 50px;
+      text-decoration: none;
+      color: black;
+      height: 40px;
+      width: 150px;
+      text-align: center;
+      font-size: 23px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+    }
+    &_group{
+      padding: 6px 0;
+    }
+    &_letter{
+      font-size: 30px;
+    }
+    &_control{
+      height: 50px;
+      width: 430px;
+      font-size: 30px;
+    }
+    &_control2{
+      height: 50px;
+      width: 100px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    &_sub{
+      background-color: rgb(253, 252, 252);
+      height: 50px;
+      width: 300px;
+      font-size: 20px;
+      cursor: pointer;
+    }
   }
 }

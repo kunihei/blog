@@ -71,3 +71,4 @@ gem "simple_calendar", "~> 2.0"
 gem 'carrierwave'
 gem 'rails_12factor', group: :production
 gem 'fog-aws'
+gem 'ransack'
