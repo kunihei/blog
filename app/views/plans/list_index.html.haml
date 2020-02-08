@@ -1,26 +1,40 @@
-= image_tag 'image2.jpg', class: 'main-image3'
 .main-logo
   .main-logo_post
+    検索
+    = search_form_for(@search, url: list_index_plans_path) do |f|
+      .main-logo_post_group
+        = f.label :title, "タイトル：", class: "main-logo_post_letter"
+        = f.text_field :title_cont, class: "main-logo_post_control"
+      .main-logo_post_group
+        = f.label :start_time, "日付開始：", class: "main-logo_post_letter"
+        = f.date_select :start_time_gteq, {include_blank: true, use_month_numbers: true, date_separator: ' / '}, class: "main-logo_post_control2"
+      .main-logo_post_group
+        = f.label :start_time, "日付終了：", class: "main-logo_post_letter"
+        = f.date_select :start_time_lteq_end_of_day, {include_blank: true, use_month_numbers: true, date_separator: ' / '}, class: "main-logo_post_control2"
+      .main-logo_post_actions
+        = f.submit "検索", class: "main-logo_post_sub"
+  .main-logo_post
     日記一覧
-  %table
-    %thead
-      %tr
-        %th
-          .main-logo_info
-            タイトル
-        %th
-          .main-logo_info
-            ユーザー名
-        %th
-          .main-logo_info
-            日時
-    %tbody
-      -@plans.each do |plan| 
-        -if plan.user_id == current_user.id
+    .main-logo_post_table
+      %table
+        %thead
           %tr
-            %td 
-              = link_to plan.title, plan_path(plan.id), class: 'main-logo_btn'
-            %td
-              =plan.user.nickname
-            %td
-              = plan.start_time.strftime("%Y年%m月%d日")
+            %th
+              .main-logo_post_info
+                タイトル
+            %th
+              .main-logo_post_info
+                ユーザー名
+            %th
+              .main-logo_post_info
+                日時
+        %tbody
+          -@plans.each do |plan| 
+            -if plan.user_id == current_user.id
+              %tr
+                %td 
+                  = link_to plan.title, plan_path(plan.id), class: 'main-logo_post_btn'
+                %td
+                  =plan.user.nickname
+                %td
+                  = plan.start_time.strftime("%Y年%m月%d日")
