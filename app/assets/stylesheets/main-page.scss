@@ -4,9 +4,12 @@
   width: 100vw;
   height: calc(100vh - 80px);
   &_schedule{
-    height: 50px;
+    height: 60px;
     margin: auto;
     overflow: scroll;
+    margin-top: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
     &_name{
       text-decoration: none;
       color: black;
@@ -44,6 +47,7 @@
     border: 1px solid #dddddd;
     border-radius: 5px;
     background-color: white;
+    line-height: 3px;
   }
   .prev-month{
     background: #dddddd;
