@@ -6,7 +6,7 @@
       内容詳細
     = link_to '編集', edit_plan_path(@plan), class: "main-info_sel_btn"
     = link_to '戻る', plans_path, class: "main-info_sel_btn"
-    = link_to '削除',plan_path(@plan), method: :delete, class: 'main-info_sel_btn', data: { confirm: '本当に消して大丈夫ですか?' }
+    = link_to '削除',plan_path(@plan), method: :delete, id: 'item-delete-btn', class: 'main-info_sel_btn',  data:{ confirm: '本当に削除しても良いですか?',cancel: 'キャンセル',commit: '削除する'}, title: '削除確認！'
 
   %table
     %tr

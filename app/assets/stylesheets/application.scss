@@ -9,6 +9,7 @@
 @import "details";
 @import 'main-page';
 @import 'user_edit';
+@import "bootstrap";
 
 .header{
   height: 80px;
@@ -22,6 +23,10 @@
       text-decoration: none;
       font-size: 40px;
       padding-left: 20px;
+      &:hover{
+        text-decoration: none;
+        color: red;
+      }
     }
   }
   &__right{
@@ -35,6 +40,7 @@
       color: blue;
       &:hover{
         color: red;
+        text-decoration: none;
       }
     }
   }
