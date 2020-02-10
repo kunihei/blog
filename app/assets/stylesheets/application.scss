@@ -56,9 +56,13 @@
 .notice {
   background-color: lightBlue;
   text-align: center;
+  height: 15px;
 }
 
 .alert {
   text-align: center;
   background-color: orange;
+  height: 15px;
+  line-height: 5px;
+  margin: 0;
 }
