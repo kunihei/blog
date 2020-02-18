@@ -14,15 +14,16 @@
         = link_to "毎日日記", root_path, class: "header__title__text"
       .header__right
         - if user_signed_in?
+          =current_user.nickname
           = link_to edit_user_registration_path, class: "header__right__icon" do
             = icon('fas', 'users-cog')
-          = link_to destroy_user_session_path, method: :delete, class: "header__right__icon" do
-            = icon('fas', 'door-open')
           = link_to  new_plan_path, class: "header__right__icon" do
             = icon('fas', 'pencil-alt')
           = link_to  list_index_plans_path, class: "header__right__icon" do
             = icon("fas", "list-ul")
-          =current_user.nickname
+          = link_to destroy_user_session_path, method: :delete, class: "header__right__icon" do
+            = icon('fas', 'door-open')
+          
         - else
           = link_to "ログイン", new_user_session_path, class: "header__btn"
           = link_to "新規登録", new_user_registration_path, class: "header__btn"

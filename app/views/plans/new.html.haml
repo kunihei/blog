@@ -19,7 +19,7 @@
         %th
           = f.label '画像', class: 'post-main_logo'
         %th 
-          #img_field{:onclick => "$('#file').click()"}
+          #img_field{onclick: "$('#file').click()"}
             - if @plan.image.present?
               = image_tag @plan.image
             - else
