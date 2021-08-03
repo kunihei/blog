@@ -1,6 +1,6 @@
 .simple-calendar
   .calendar-heading
-    = link_to t('simple_calendar.previous', default: 'a前月'), calendar.url_for_previous_view, class: 'calendar-heading_btn'
+    = link_to t('simple_calendar.previous', default: '前月'), calendar.url_for_previous_view, class: 'calendar-heading_btn'
     %span.calendar-title
       = start_date.year
       年 #{t('date.abbr_month_names')[start_date.month]}
